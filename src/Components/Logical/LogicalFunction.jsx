@@ -20,8 +20,6 @@ export const checkTheResult = (firstString,secondString,setResultDescription,set
      }else if(parseFloat(BMIResult) > 30.0){
       setResultDescription(expressionResult[3].title) 
       setResultOfAbout(expressionResult[3].description)
-    }else{
-      setResultDescription("Angka Di Bawah 0 tidak bisa di proses")
     }
     setFirstString('')
      setSecondString('')
