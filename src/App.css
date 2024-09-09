@@ -1,0 +1,23 @@
+.calculateBox{
+  margin: 120px auto;
+  width: 800px;
+  text-align: center;
+  outline-style: double;
+  outline-width: 10px;
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.inputBar{
+  font-size: 28px;
+  margin: 5px;
+}
+
+.buttonBar{
+  margin: 5px;
+}
+
+.boxText{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 800px;
+  height: 200px;
+}
