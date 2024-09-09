@@ -2,7 +2,7 @@ export const expressionResult = [
     {
         title : `Kekurangan Berat Badan`,
         description : `
-        hasil BMI kamu berada di 18.5 atau kurangmengindikasikan kekurangan berat badan.
+        hasil BMI kamu berada di 18.5 atau kurang mengindikasikan kekurangan berat badan.
         tubuh kamu mungkin tidak memiliki cukup lemak atau massa otot yang cukup untuk mempertahankan fungsi optimal.
           
         Disarankan untuk mengkonsultasikan kondisi ini dengan ahli gizi atau dokter
