@@ -2,7 +2,7 @@ import { expressionResult } from "../Data/resultData";
 
 export const checkTheResult = (firstString,secondString,setResultDescription,setResultOfAbout,setResult,setFirstString,setSecondString)=>{
 
-    if(firstString !== '' && secondString !== ''){
+  if(firstString !== '' && secondString !== '' && parseFloat(firstString) > 0 && parseFloat(secondString) > 0){
       const weightValue = parseFloat(firstString);
       const heightValue = parseFloat(secondString);
       const BMIResult = weightValue / (heightValue / 100) ** 2
@@ -20,8 +20,10 @@ export const checkTheResult = (firstString,secondString,setResultDescription,set
      }else if(parseFloat(BMIResult) > 30.0){
       setResultDescription(expressionResult[3].title) 
       setResultOfAbout(expressionResult[3].description)
+    }else{
+      setResultDescription("Angka Di Bawah 0 tidak bisa di proses")
     }
-     setFirstString('')
+    setFirstString('')
      setSecondString('')
     }
   }

@@ -1,0 +1,13 @@
+
+.inputBar{
+    width: 45%;
+    border-radius: 20px;
+    font-size: 28px;
+    border: 5px solid #a4345b;
+    margin: 5px;
+    background: linear-gradient(to right, #1a1919,#363434);
+    color: #b52a5b;
+}
+label{
+    color: #d25782;
+}

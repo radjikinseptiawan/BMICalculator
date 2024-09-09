@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import { checkTheResult } from './Components/Logical/LogicalFunction'
+import Button from './Components/Elements/Button'
+import Input from './Components/Elements/Input'
 
 function App() {
   const [result,setResult] = useState(0)
@@ -14,25 +16,22 @@ function App() {
   return (
     <>
     <div className='calculateBox'>
-      <label><h2>Init Weight</h2></label>
-      <input type='number' 
-      placeholder='Your Weight' 
-      value={firstString}
-      className='inputBar'
-      onChange={(e)=>setFirstString(e.target.value)}/>
+      <div className='input-group'>
+    <Input
+    labelOn={'Masukkan Berat Badan'}
+    value={firstString}
+    onChangeInput={(e)=>setFirstString(e.target.value)}
+    ></Input>
     <br/>
-    <label><h2>Init Height</h2></label>
-      <input type='number'
-      placeholder='Your Height' 
-      value={secondString}
-      className='inputBar'
-      onChange={(e)=>setSecondString(e.target.value)}/>
+    <Input 
+    labelOn={'Masukkan Tinggi Badan'}
+    value={secondString}
+    onChangeInput={(e)=>setSecondString(e.target.value)}></Input>
     <br/>  
-      <button 
-      onClick={()=>checkTheResult(firstString,secondString,setResultDescription,setResultOfAbout,setResult,setFirstString,setSecondString)}
-      className='buttonBar' 
-      >result</button>
+    </div>
+      <Button onCalculate={()=>checkTheResult(firstString,secondString,setResultDescription,setResultOfAbout,setResult,setFirstString,setSecondString)}></Button>
       <div className='boxText'>
+        <img src="" alt="png" />
         <h1>{result.toFixed(2)}</h1>
         <h3>{resultDescription}</h3>
         <p>{resultOfAbout}</p>
