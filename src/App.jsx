@@ -18,12 +18,14 @@ function App() {
     <div className='calculateBox'>
       <div className='input-group'>
     <Input
+    placeHolder={'Kg'}
     labelOn={'Masukkan Berat Badan'}
     value={firstString}
     onChangeInput={(e)=>setFirstString(e.target.value)}
     ></Input>
     <br/>
     <Input 
+    placeHolder={'cm'}
     labelOn={'Masukkan Tinggi Badan'}
     value={secondString}
     onChangeInput={(e)=>setSecondString(e.target.value)}></Input>
