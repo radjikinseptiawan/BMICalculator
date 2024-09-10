@@ -33,7 +33,6 @@ function App() {
     </div>
       <Button onCalculate={()=>checkTheResult(firstString,secondString,setResultDescription,setResultOfAbout,setResult,setFirstString,setSecondString)}></Button>
       <div className='boxText'>
-        <img src="" alt="png" />
         <h1>{result.toFixed(2)}</h1>
         <h3>{resultDescription}</h3>
         <p>{resultOfAbout}</p>
